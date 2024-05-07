@@ -1,6 +1,5 @@
 <script lang="ts">
   import "../app.css";
-  import { Wrapper } from "@smui/tooltip";
 
   import _ from "lodash";
   import Image from "$lib/Image.svelte";
@@ -10,6 +9,9 @@
   type TechItemsType = PageData["techExperience"];
   let techItemSelected: undefined | (TechItemsType[0] & { isVisible: boolean });
   export let filterText: string = "";
+  let techItemPopupBoxRect: DOMRect | undefined;
+  let techItemOffsetTop: number = 0;
+  let techItemOffsetLeft: number = 0;
 
   export const getTechItems = (
     f: string,
@@ -89,19 +91,6 @@
       <h1 class="mb-8">Tech experience</h1>
       <div class="flex mt-4 flex-col gap-8 text-white">
         <div class="relative">
-          <div
-            class="text-cyan-400 font-bold border-dotted border-zinc-500 border-2 text-center p-8 mt-8 rounded min-h-32 flex flex-col items-center justify-center"
-          >
-            {#if !techItemSelected}
-              <p class="italic select-none font-light">
-                Hover or click the item to reveal some info...
-              </p>
-            {/if}
-            {#if techItemSelected}
-              <h2 class="text-white font-bold">{techItemSelected.title}</h2>
-              <p>{techItemSelected.description}</p>
-            {/if}
-          </div>
           <div class="relative">
             <img
               src="/funnel.svg"
@@ -115,33 +104,47 @@
               class="rounded p-2 pl-10 text-white w-full bg-zinc-600 mt-8"
             />
           </div>
-          <div class="flex gap-6 gap-y-0 justify-center mt-8 flex-wrap">
+          <div
+            class="flex gap-6 gap-y-0 justify-center mt-8 flex-wrap relative"
+          >
+            <div
+              class:hidden={!techItemSelected}
+              style="bottom: calc({-techItemOffsetTop}px + 100% + 0.5rem)"
+              class="absolute bg-zinc-900 bg-opacity-95 z-10 text-cyan-400 font-bold border-dotted border-zinc-500 border-2 text-center p-8 rounded min-h-32 flex flex-col items-center justify-center w-full"
+            >
+              <h2 class="text-white font-bold">{techItemSelected?.title}</h2>
+              <p>{techItemSelected?.description}</p>
+              <div
+                style="left: calc({techItemOffsetLeft}px - 0.5rem + {(techItemPopupBoxRect?.width ??
+                  0) / 2}px - 1rem);"
+                class="absolute nozzle bg-zinc-900 bg-opacity-95 border-dotted border-zinc-500 border-2 w-4 h-4 rotate-45 border-t-0 border-l-0 -bottom-3 mb-[2px]"
+              ></div>
+              <button
+                class="absolute top-1 left-full w-8 h-8 -ml-9 text-white"
+                on:click={() => {
+                  techItemSelected = undefined;
+                }}>x</button
+              >
+            </div>
             {#each getTechItems(filterText) as techItem}
-              <Wrapper rich>
-                <button
-                  on:click={() => {
-                    techItemSelected = techItem;
-                  }}
-                  on:mouseover={() => {
-                    techItemSelected = techItem;
-                  }}
-                  on:focus={() => () => {
-                    techItemSelected = techItem;
-                  }}
-                  on:mouseout={() => {
+              <button
+                on:click={(e) => {
+                  if (techItemSelected?.title === techItem.title) {
                     techItemSelected = undefined;
-                  }}
-                  on:blur={() => {
-                    techItemSelected = undefined;
-                  }}
-                  class="font-bold hover:scale-125 hover:text-cyan-400 transform transition duration-300 cursor-pointer flex items-center"
-                  style="font-size: {(techItem.level * 5 + 5) /
-                    17}rem; opacity: {(20 * techItem.level) /
-                    100};visibility:{techItem?.isVisible
-                    ? 'visible'
-                    : 'hidden'}">{techItem.title}</button
-                >
-              </Wrapper>
+                  } else {
+                    const button = e.currentTarget;
+                    techItemPopupBoxRect = button.getBoundingClientRect();
+                    techItemOffsetTop = button.offsetTop;
+                    techItemOffsetLeft = button.offsetLeft;
+                    techItemSelected = techItem;
+                  }
+                }}
+                class="font-bold hover:scale-125 hover:text-cyan-400 transform transition duration-300 cursor-pointer flex items-center"
+                style="font-size: {(techItem.level * 5 + 5) /
+                  17}rem; opacity: {(20 * techItem.level) /
+                  100};visibility:{techItem?.isVisible ? 'visible' : 'hidden'}"
+                >{techItem.title}</button
+              >
             {/each}
           </div>
         </div>
