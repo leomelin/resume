@@ -1,0 +1,48 @@
+<script lang="ts">
+    import "../app.css";
+    import type { PageData } from "../../.svelte-kit/types/src/routes/$types";
+
+
+    export let data: PageData
+</script>
+
+<style lang="postcss">
+
+    @media (max-width: 1024px) {
+        .profile-image {
+            position: relative;
+            overflow: hidden;
+            min-width: 100%;
+            height: 80vw;
+
+        }
+
+        .profile-image .portrait {
+            position: absolute;
+            top: calc(-100vw / 2 + 50%);
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .profile-image {
+            position: relative;
+            overflow: hidden;
+            height: calc(100% + 6rem);
+        }
+    }
+
+</style>
+<div class="profile-image shadow-2xl shadow-black scale-[1.080] lg:-translate-x-12 lg:-translate-y-12">
+    <img class="portrait w-2/4 scale-[2] translate-x-1/2 translate-y-1/2 lg:translate-y-1/3" alt="A Portrait of Leo Melin" src="/portrait.jpg"  />
+    <div class="absolute bottom-0 h-1/3 bg-gradient-to-b from-transparent to-black w-full text-white flex flex-col justify-end pb-4">
+        <div class="flex justify-center align-middle"><h1>{data.basicInfo.name}</h1></div>
+        <div class="flex justify-center align-middle text-cyan-400">{data.basicInfo.title}</div>
+        <div class="flex justify-center align-middle mt-4 gap-4">
+            {#each data.basicInfo.links as linkItem}
+                <a href="{linkItem.href}" class="w-8 h-8 box-border hover:scale-125 transform transition duration-300">
+                    <img src="/{linkItem.icon}" alt="{linkItem.name}" class="w-8 h-8" />
+                </a>
+            {/each}
+        </div>
+    </div>
+</div>
