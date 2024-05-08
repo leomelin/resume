@@ -75,12 +75,12 @@ export const load: PageLoad<ResumeModel> = async () => {
         },
         {
           name: "Email",
-          href: "mailto:leo MIUKU leomelin piste com",
+          href: "bWFpbHRvOmxlb0BsZW9tZWxpbi5jb20=",
           icon: "email.png",
         },
         {
           name: "Phone",
-          href: "tel:+358445176923",
+          href: "dGVsOiszNTg0NDUxNzY5MjM=",
           icon: "phone.png",
         },
       ],

@@ -3,6 +3,14 @@
   import type { PageData } from "../../.svelte-kit/types/src/routes/$types";
 
   export let data: PageData;
+
+  function handleObfuscatedLink(href: string) {
+    const link = document.createElement("a");
+    link.href = atob(href);
+    document.body.append(link);
+    link.click();
+    document.removeChild(link);
+  }
 </script>
 
 <div
@@ -19,12 +27,23 @@
     </div>
     <div class="flex justify-center align-middle mt-4 gap-4">
       {#each data.basicInfo.links as linkItem}
-        <a
-          href={linkItem.href}
-          class="w-8 h-8 box-border hover:scale-125 transform transition duration-300"
-        >
-          <img src="/{linkItem.icon}" alt={linkItem.name} class="w-8 h-8" />
-        </a>
+        {#if ["Email", "Phone"].includes(linkItem.name)}
+          <a
+            href="/#"
+            rel="nofollow, noindex"
+            on:click={() => handleObfuscatedLink(linkItem.href)}
+            class="w-8 h-8 box-border hover:scale-125 transform transition duration-300"
+          >
+            <img src="/{linkItem.icon}" alt={linkItem.name} class="w-8 h-8" />
+          </a>
+        {:else}
+          <a
+            href={linkItem.href}
+            class="w-8 h-8 box-border hover:scale-125 transform transition duration-300"
+          >
+            <img src="/{linkItem.icon}" alt={linkItem.name} class="w-8 h-8" />
+          </a>
+        {/if}
       {/each}
     </div>
   </div>
