@@ -16,12 +16,13 @@
 >
   <h1 class="text-white font-bold">{techItem?.title}</h1>
   <div class="uppercase text-white mb-4">
-    Skill Level <span class="text-yellow-300 tracking-widest"
-      >{new Array(techItem?.level ?? 0)
+    Skill Level <div class="text-yellow-300 inline-flex">
+      {#each new Array(Math.ceil(techItem?.level ?? 0))
         .fill("")
-        .map(() => "★")
-        .join("")}</span
-    >
+        .map(() => "★") as star, index}
+        <span class:half={index + 1 > (techItem?.level ?? 0)}>{star}</span>
+      {/each}
+    </div>
   </div>
   <p>{techItem?.description}</p>
   <div
@@ -36,3 +37,11 @@
     }}>x</button
   >
 </div>
+
+<style lang="postcss">
+  .half {
+    overflow: hidden;
+    width: 0.5rem;
+    display: inline-block;
+  }
+</style>
