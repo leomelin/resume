@@ -4,7 +4,8 @@
 
   export let data: PageData;
 
-  const handleObfuscatedLink = (href: string) => {
+  const handleObfuscatedLink = (e: Event, href: string) => {
+    e.preventDefault();
     const link = document.createElement("a");
     link.href = atob(href);
     document.body.append(link);
@@ -31,7 +32,7 @@
           <a
             href="/#"
             rel="nofollow, noindex"
-            on:click={() => handleObfuscatedLink(linkItem.href)}
+            on:click={(e) => handleObfuscatedLink(e, linkItem.href)}
             class="w-8 h-8 box-border hover:scale-125 transform transition duration-300"
           >
             <img src="/{linkItem.icon}" alt={linkItem.name} class="w-8 h-8" />
