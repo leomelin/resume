@@ -52,7 +52,7 @@
 
 <style lang="postcss">
   .profile-image {
-    background-image: url("/portrait.jpg");
+    background-image: url("/portrait.webp");
     background-size: cover;
     background-position: 50% calc(50% + 2rem);
     background-repeat: no-repeat;

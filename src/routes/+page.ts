@@ -66,22 +66,22 @@ export const load: PageLoad<ResumeModel> = async () => {
         {
           name: "Linkedin",
           href: "https://www.linkedin.com/in/leo-melin-70991a20/",
-          icon: "linkedin.png",
+          icon: "linkedin.webp",
         },
         {
           name: "Github",
           href: "https://github.com/leomelin",
-          icon: "github.png",
+          icon: "github.webp",
         },
         {
           name: "Email",
           href: "bWFpbHRvOmxlb0BsZW9tZWxpbi5jb20=",
-          icon: "email.png",
+          icon: "email.webp",
         },
         {
           name: "Phone",
           href: "dGVsOiszNTg0NDUxNzY5MjM=",
-          icon: "phone.png",
+          icon: "phone.webp",
         },
       ],
     },
