@@ -16,7 +16,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Melin Systems Oy",
         title: "Independent contractor",
         description:
-          "As an independent contractor, I've worked closely with large businesses to develop web-based applications tailored to their needs. My focus has been on implementing complex business logic and handling sizeable datasets, ensuring the reliability and scalability of each solution. I collaborate closely with clients, utilizing modern web development tools like Node.js, React, PostgreSQL, Terraform, Azure Cloud, Snowflake, and other up-to-date technologies. This hands-on approach ensures that every project meets and exceeds client expectations.",
+          "As an independent contractor, I've worked closely with large businesses to develop web-based applications tailored to their needs. My focus has been on implementing complex business logic, provisioning infrastructure and handling sizeable datasets, ensuring the reliability and scalability of each solution. I collaborate closely with clients, utilizing modern web development tools like Node.js, Java, Kotlin, React, PostgreSQL, Terraform, Azure Cloud, AWS, Snowflake, and other up-to-date technologies. I ensure that every project meets and exceeds client expectations.",
       },
       {
         timeStart: "2019",
@@ -24,7 +24,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Mylab Oy",
         title: "Software Architect",
         description:
-          "I specialized in full-stack development and software architecture design, utilizing a versatile toolkit including Kotlin, Spring Boot, Node.js, TypeScript, React, ActiveMQ, and Kubernetes microservices deployed on-site. A significant achievement involved spearheading a greenfield project within a 7-person team, operating within a SAFe (Scaled Agile Framework) environment. In this role, I had the autonomy to select and implement cutting-edge technologies that best suited project requirements. Additionally, I served as the SCRUM master, leading our agile team while also shouldering responsibilities as the technical lead. This multifaceted role enabled me to orchestrate seamless collaboration, ensuring the successful delivery of high-quality software solutions.",
+          "I specialized in fullstack development and software architecture design, utilizing a versatile toolkit including Kotlin, Spring Boot, Node.js, TypeScript, React, ActiveMQ, and Kubernetes microservices deployed on-site. A significant achievement involved spearheading a greenfield project within a 7-person team, operating within a SAFe (Scaled Agile Framework) environment. In this role, I had the autonomy to select and implement cutting-edge technologies that best suited project requirements. Additionally, I served as the SCRUM master, leading our agile team while also shouldering responsibilities as the technical lead. This multifaceted role enabled me to orchestrate seamless collaboration, ensuring the successful delivery of high-quality software solutions.",
       },
       {
         timeStart: "2015",
@@ -32,7 +32,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Gofore Oyj",
         title: "Senior Developer",
         description:
-          'I was a fullstack developer in several customer projects. I was also a leader of our communality crew for 1,5 years being responsible of making Gofore a better workplace. My expertise was used in customer projects utilizing AWS services, where I\'ve developed Java Spring Boot and Node.js backends. I worked with various UI Frameworks like Angular, Vue.js, and React, tailoring solutions to project needs. Databases such as Mongo, ElasticSearch, and PostgreSQL was an integral part of my projects. Notable endeavors include crafting an "Industrial Electric Distribution Asset Management and Tariff Calculation System," an "Internal Reporting Tool for a Giant Global Furniture Manufacturer," a "Remake of a Well-Known Leasing Provider\'s Asset Management System," and a "New Mobile-First Version of a Leading Real Estate Platform in Finland."',
+          'Fullstack developer in several customer projects. I was also a leader of our communality crew for 1,5 years being responsible of making Gofore a better workplace. My expertise was used in customer projects utilizing AWS services, where I developed Java Spring Boot and Node.js backends. I worked with various UI Frameworks like Angular, Vue.js, and React, tailoring solutions to project needs. Databases such as Mongo, ElasticSearch, and PostgreSQL was an integral part of my projects. Notable endeavors include crafting an "Industrial Electric Distribution Asset Management and Tariff Calculation System," an "Internal Reporting Tool for a Giant Global Furniture Manufacturer," a "Remake of a Well-Known Leasing Provider\'s Asset Management System," and a "New Mobile-First Version of a Real Estate Platform"',
       },
       {
         timeStart: "2013",
@@ -40,7 +40,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Eeedo Oy",
         title: "Lead Developer",
         description:
-          "I led the development, maintenance, and design of a cloud-based SaaS product, making crucial technological decisions. This included creating a mobile application using Cordova/Phonegap, which was successfully launched across Windows Phone, Android, and IOS platforms. Technologies utilized in this project encompassed Ubuntu/Linux, Microsoft Azure, Nginx, MariaDB, PHP-fpm, Amazon S3, Amazon SES, HTML5, JavaScript, Node.js, Cordova/PhoneGap, PHP Zend Framework, RequireJS, Backbone, Can.js, Bower, Gulp, and jQuery.",
+          "I led the development, maintenance, and design of a cloud-based SaaS product, making crucial technological decisions. This included building a mobile application using Cordova/Phonegap, which was successfully launched across Windows Phone, Android, and IOS platforms. Technologies utilized in this project encompassed Ubuntu/Linux, Microsoft Azure, Nginx, MariaDB, PHP-fpm, Amazon S3, Amazon SES, HTML5, JavaScript, Node.js, Cordova/PhoneGap, PHP Zend Framework, RequireJS, Backbone, Can.js, Bower, Gulp, and jQuery.",
       },
       {
         timeStart: "2013",
@@ -48,7 +48,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Tietotemput Oy",
         title: "Web Developer",
         description:
-          "I've tackled diverse web development projects, showcasing my ability to create dynamic websites using WordPress, HTML, CSS, JavaScript, jQuery, and PHP. From sleek designs to robust platforms, each project demonstrated my skill in crafting captivating online experiences. Whether customizing themes, optimizing performance, or implementing complex functionalities, I consistently delivered tailored, high-quality results. With a keen eye for design and a passion for coding, I thrived on turning ideas into polished, user-friendly websites.",
+          "During my time at Tietotemput Oy, I tackled diverse web development projects, showcasing my ability to create dynamic websites using WordPress, HTML, CSS, JavaScript, jQuery, and PHP. From sleek designs to robust platforms, each project demonstrated my skill in crafting captivating online experiences. Whether customizing themes, optimizing performance, or implementing complex functionalities, I consistently delivered tailored, high-quality results. With a keen eye for design and a passion for coding, I thrived on turning ideas into polished, user-friendly websites.",
       },
       {
         timeStart: "...",
@@ -56,7 +56,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         company: "Other experience",
         title: "",
         description:
-          "I've engaged in occasional freelance website projects alongside founding and subsequently selling my share in a recording studio. Additionally, I represented Finland for a Norwegian digital music distribution agency and served as an audio engineer at Cosmic Studios Tampere. Further, I founded a record label and pursued freelance audio engineering across various projects. Prior to transitioning to web development, I gained experience through summer jobs in retail stores and cafes, as well as a one-year role in IT helpdesk support. While these experiences are now part of my history, I've since moved on to focus on web development.\n",
+          "I engaged in occasional freelance website projects alongside founding and subsequently selling my share in a recording studio. Additionally, I represented Finland for a Norwegian digital music distribution agency and served as an audio engineer at Cosmic Studios Tampere. Further, I founded a record label and pursued freelance audio engineering across various projects. Prior to transitioning to web development, I gained experience through summer jobs in retail stores and cafes, as well as a one-year role in IT helpdesk support. While these experiences are now part of my history, I've since moved on to focus on web development.",
       },
     ],
     basicInfo: {
@@ -110,12 +110,12 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "ActionScript",
         level: 2,
-        description: "Used in one customer project",
+        description: "Used in one customer project.",
       },
       {
         title: "ActiveMQ",
         level: 4,
-        description: "Used in a couple of customer projects",
+        description: "Used in a couple of customer projects.",
       },
       {
         title: "Adobe Illustrator",
@@ -126,13 +126,13 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Adobe Photoshop",
         level: 3,
-        description: "Used in hobby projects",
+        description: "Used in hobby projects and for personal fun.",
       },
       {
         title: "Amazon AWS",
         level: 4,
         description:
-          "Used different AWS services in multiple customer projects",
+          "Used different AWS services in multiple customer projects.",
       },
       {
         title: "AngularJS",
@@ -157,6 +157,24 @@ export const load: PageLoad<ResumeModel> = async () => {
           "The transpiler from back in the day. Used it in customer projects. Starting to be pretty obsolete now.",
       },
       {
+        title: "Webpack",
+        level: 3,
+        description:
+          "Used in many projects as the build tool. Mainly configured it for project needs.",
+      },
+      {
+        title: "Rollup",
+        level: 3,
+        description:
+          "Used it mainly for creating builds for internal NPM modules.",
+      },
+      {
+        title: "Vite",
+        level: 2,
+        description:
+          "Haven't got the opportunity to use this much yet, but I used it when creating this resume website.",
+      },
+      {
         title: "Backbone.js",
         level: 2,
         description: "Used in one customer project. It's been a while.",
@@ -169,7 +187,7 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Bitbucket",
         level: 4,
-        description: "Used in some hobby projects",
+        description: "Used in some hobby projects.",
       },
       {
         title: "Bootstrap",
@@ -237,13 +255,13 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Element UI",
         level: 2,
-        description: "Used it in one customer project. Been a while.",
+        description: "Used it in one customer project. It's been a while.",
       },
       {
         title: "Elm",
         level: 1,
         description:
-          "Fiddled with and early version of it in a hobby project. Don't remember much about it. Very nice error messages!",
+          "Fiddled with an early version of it in a hobby project. Don't remember much about it. Very nice error messages!",
       },
       {
         title: "Express",
@@ -290,7 +308,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         title: "Groovy",
         level: 3,
         description:
-          "I've used it to configure gradle mainly in customer projects and hobby projects",
+          "I've used it to configure gradle mainly in customer projects and hobby projects.",
       },
       {
         title: "Grunt",
@@ -321,7 +339,8 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Java",
         level: 5,
-        description: "Used it in many customer projects",
+        description:
+          "Used it in many customer projects. Mainly Spring Boot stuff.",
       },
       {
         title: "JavaScript",
@@ -331,7 +350,7 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Jenkins",
         level: 4,
-        description: "Used it as a CI tool in multiple customer projects",
+        description: "Used it as a CI tool in multiple customer projects.",
       },
       {
         title: "jOOQ",
@@ -348,7 +367,7 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Karma",
         level: 2,
-        description: "Used it in one customer project. Been a while.",
+        description: "Used it in one customer project. It's been a while.",
       },
       {
         title: "Kotlin",
@@ -370,18 +389,18 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "Lodash",
         level: 5,
-        description: "Used it in many customer projects",
+        description: "Used it in many customer projects.",
       },
       {
         title: "MariaDB",
         level: 5,
-        description: "Used it in many customer projects",
+        description: "Used it in many customer projects.",
       },
       {
         title: "Maven",
         level: 4,
         description:
-          "Used it in a couple of customer projects. Mainly been using gradle though.",
+          "Used it in a couple of customer projects. Mainly been using Gradle though.",
       },
       {
         title: "Memcached",
@@ -444,13 +463,13 @@ export const load: PageLoad<ResumeModel> = async () => {
         title: "Nginx",
         level: 5,
         description:
-          "I\ve used it in many customer projects for serving applications.",
+          "I've used it in many customer projects for serving applications.",
       },
       {
         title: "Node.js",
         level: 5,
         description:
-          "I\ve used it in many customer projects for backend services.",
+          "I've used it in many customer projects for backend services.",
       },
       {
         title: "OAuth2.0",
@@ -462,13 +481,13 @@ export const load: PageLoad<ResumeModel> = async () => {
         title: "Apache Cordova",
         level: 4,
         description:
-          "I've built a cross platform mobile application with PhoneGap/Apache Cordova",
+          "I've built a cross platform mobile application with PhoneGap/Apache Cordova.",
       },
       {
         title: "Phonegap",
         level: 4,
         description:
-          "I've built a cross platform mobile application with Phonegap/Apache Cordova",
+          "I've built a cross platform mobile application with Phonegap/Apache Cordova.",
       },
       {
         title: "PHP",
@@ -553,7 +572,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         title: "TestCafe",
         level: 5,
         description:
-          "Used it in a few customer projects as the frontend testing framework",
+          "Used it in a few customer projects as the frontend testing framework.",
       },
       {
         title: "Trello",
@@ -565,7 +584,7 @@ export const load: PageLoad<ResumeModel> = async () => {
         title: "Jira",
         level: 4,
         description:
-          "Used it for sprint planning and canban stuff in many projects.",
+          "Used it for sprint planning and kanban stuff in many projects.",
       },
       {
         title: "TypeScript",
@@ -644,7 +663,7 @@ export const load: PageLoad<ResumeModel> = async () => {
       {
         title: "TanStack query",
         level: 4,
-        description: "I've used it as the http request handler with React",
+        description: "I've used it as the http request handler with React.",
       },
       {
         title: "C#",

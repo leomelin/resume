@@ -4,13 +4,13 @@
 
   export let data: PageData;
 
-  function handleObfuscatedLink(href: string) {
+  const handleObfuscatedLink = (href: string) => {
     const link = document.createElement("a");
     link.href = atob(href);
     document.body.append(link);
     link.click();
     document.removeChild(link);
-  }
+  };
 </script>
 
 <div
