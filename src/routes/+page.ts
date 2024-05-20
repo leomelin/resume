@@ -43,8 +43,8 @@ export const load: PageLoad<ResumeModel> = async () => {
           "I led the development, maintenance, and design of a cloud-based SaaS product, making crucial technological decisions. This included building a mobile application using Cordova/Phonegap, which was successfully launched across Windows Phone, Android, and IOS platforms. Technologies utilized in this project encompassed Ubuntu/Linux, Microsoft Azure, Nginx, MariaDB, PHP-fpm, Amazon S3, Amazon SES, HTML5, JavaScript, Node.js, Cordova/PhoneGap, PHP Zend Framework, RequireJS, Backbone, Can.js, Bower, Gulp, and jQuery.",
       },
       {
-        timeStart: "2013",
-        timeEnd: "2012",
+        timeStart: "2012",
+        timeEnd: "2013",
         company: "Tietotemput Oy",
         title: "Web Developer",
         description:
@@ -52,7 +52,7 @@ export const load: PageLoad<ResumeModel> = async () => {
       },
       {
         timeStart: "...",
-        timeEnd: "2013",
+        timeEnd: "2012",
         company: "Other experience",
         title: "",
         description:
